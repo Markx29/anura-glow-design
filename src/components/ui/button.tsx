@@ -15,11 +15,16 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Luxury Anura variants
+        hero: "bg-gradient-to-r from-primary to-tertiary text-primary-foreground font-ui font-semibold shadow-luxury hover:shadow-glow hover:scale-105 transition-all duration-300",
+        luxury: "bg-secondary text-secondary-foreground font-ui font-semibold border border-secondary hover:bg-secondary/90 transition-all duration-300",
+        outline_gold: "border-2 border-primary text-primary font-ui font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-14 rounded-xl px-8 py-4",
         icon: "h-10 w-10",
       },
     },
