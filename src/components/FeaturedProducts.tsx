@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import candleSage from "@/assets/candle-sage.jpg";
 import candleIvory from "@/assets/candle-ivory.jpg";
 import candleAmber from "@/assets/candle-amber.jpg";
@@ -53,9 +54,11 @@ const FeaturedProducts = () => {
                   
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
-                    <Button variant="hero" size="lg" className="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                      Quick Shop
-                    </Button>
+                    <Link to="/product/rose-collection">
+                      <Button variant="hero" size="lg" className="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                        Quick Shop
+                      </Button>
+                    </Link>
                   </div>
                 </div>
                 
@@ -76,9 +79,11 @@ const FeaturedProducts = () => {
         </div>
         
         <div className="text-center mt-12">
-          <Button variant="outline_gold" size="lg">
-            View All Products
-          </Button>
+          <Link to="/product/rose-collection">
+            <Button variant="outline_gold" size="lg">
+              View All Products
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
