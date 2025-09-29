@@ -41,8 +41,8 @@ const FeaturedProducts = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-          {products.map((product) => (
-            <div key={product.id} className="group">
+          {products.map((product, index) => (
+            <div key={product.id} className={`group scroll-fade-in hover-scale-card`} style={{animationDelay: `${index * 200}ms`}}>
               <div className="card-luxury relative overflow-hidden">
                 <div className="aspect-square relative mb-6">
                   <img 

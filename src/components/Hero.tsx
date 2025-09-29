@@ -15,7 +15,7 @@ const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto scroll-fade-in">
         <div className="fade-in-up animate">
           <h1 className="font-display text-5xl md:text-7xl font-bold text-white mb-6 text-balance">
             Anura — Handmade Soy Candles

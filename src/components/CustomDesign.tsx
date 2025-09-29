@@ -27,7 +27,7 @@ const steps = [
 const CustomDesign = () => {
   return (
     <section className="py-20 px-6 bg-gradient-to-b from-background to-warm-beige">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto scroll-fade-in">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
             Your Vision, Your Candle

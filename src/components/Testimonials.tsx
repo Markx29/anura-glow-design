@@ -49,8 +49,8 @@ const Testimonials = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="group">
+          {testimonials.map((testimonial, index) => (
+            <div key={testimonial.id} className={`group scroll-fade-in hover-scale-card`} style={{animationDelay: `${index * 150}ms`}}>
               <div className="card-luxury h-full">
                 {/* Stars */}
                 <div className="flex space-x-1 mb-4">

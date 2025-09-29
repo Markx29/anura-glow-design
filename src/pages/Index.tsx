@@ -1,3 +1,4 @@
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Hero from "@/components/Hero";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import CustomDesign from "@/components/CustomDesign";
@@ -8,6 +9,8 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  useScrollAnimation();
+  
   return (
     <div className="min-h-screen">
       <Hero />
