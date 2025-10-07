@@ -3,35 +3,31 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Chen",
-    location: "New York, NY",
+    name: "Aarohi Mehta",
+    location: "Mumbai, Maharashtra",
     rating: 5,
-    text: "The custom candles for my wedding were absolutely perfect. The scent was exactly what I envisioned, and the quality is unmatched. My guests are still talking about them!",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b194?w=150&h=150&fit=crop&crop=face"
+    text: "The candles I ordered for my engagement were beyond perfect! The fragrance filled the entire room, and the design looked so elegant. Everyone kept asking where I got them from!",
   },
   {
     id: 2,
-    name: "Michael Rodriguez",
-    location: "Austin, TX",
+    name: "Rohit Singh",
+    location: "Bangalore, Punjab",
     rating: 5,
-    text: "As a business owner, I needed high-quality corporate gifts. Anura delivered beyond expectations. The custom branding looked elegant and professional.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    text: "I wanted premium gifts for my clients, and Anura candles were a hit. The customization, packaging, and fragrance quality — everything felt high-end and truly Indian in essence.",
   },
   {
     id: 3,
-    name: "Emma Thompson",
-    location: "Portland, OR",
+    name: "Priya Nair",
+    location: "Kochi, Kerala",
     rating: 5,
-    text: "I'm obsessed with the Sage Tranquility candle! It burns evenly, smells amazing for hours, and the packaging is so beautiful. Definitely subscribing to the monthly box.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    text: "Absolutely love the Sandalwood Serenity candle! It burns beautifully and fills my home with such calming vibes. It’s now a part of my daily evening ritual.",
   },
   {
     id: 4,
-    name: "David Park",
-    location: "San Francisco, CA",
+    name: "Arjun Patel",
+    location: "Ahmedabad, Gujarat",
     rating: 5,
-    text: "The attention to detail is incredible. From the moment you open the package to lighting the candle, everything feels premium and thoughtfully designed.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    text: "From the elegant packaging to the long-lasting fragrance, everything feels so thoughtfully crafted. Anura candles truly bring a touch of luxury to everyday moments.",
   }
 ];
 
@@ -70,7 +66,6 @@ const Testimonials = () => {
                 {/* Customer Info */}
                 <div className="flex items-center space-x-4 mt-auto">
                   <img 
-                    src={testimonial.image} 
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full object-cover"
                   />
@@ -95,7 +90,6 @@ const Testimonials = () => {
               {testimonials.slice(0, 3).map((testimonial) => (
                 <img 
                   key={testimonial.id}
-                  src={testimonial.image} 
                   alt={testimonial.name}
                   className="w-8 h-8 rounded-full border-2 border-background object-cover"
                 />

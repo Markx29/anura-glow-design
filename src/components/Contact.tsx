@@ -102,10 +102,10 @@ const Contact = () => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-ui font-semibold text-foreground mb-1">Studio Address</h4>
+                    <h4 className="font-ui font-semibold text-foreground mb-1"> india </h4>
                     <p className="font-body text-muted-foreground">
-                      123 Artisan Street<br />
-                      Craft District, NY 10001
+                      <br />
+                      
                     </p>
                   </div>
                 </div>
@@ -119,8 +119,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-ui font-semibold text-foreground mb-1">Phone</h4>
                     <p className="font-body text-muted-foreground">
-                      +1 (555) 123-4567
-                    </p>
+                     +(91)  8847065877    </p>
                   </div>
                 </div>
                 
@@ -170,11 +169,9 @@ const Contact = () => {
                 <a href="#" className="w-12 h-12 bg-gradient-to-br from-primary to-tertiary rounded-lg flex items-center justify-center hover:shadow-glow transition-all duration-300 group">
                   <Instagram className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
                 </a>
-                <a href="#" className="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center hover:shadow-glow transition-all duration-300 group">
-                  <Facebook className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
-                </a>
-                <a href="#" className="w-12 h-12 bg-gradient-to-br from-tertiary to-accent rounded-lg flex items-center justify-center hover:shadow-glow transition-all duration-300 group">
-                  <Twitter className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
+                
+                <a href="#" className="w-12 h-12 bg-gradient-to-br from-tertiary to-accent rounded-lg flex items-center justify-center hover:transform: scale(2) shadow-glow transition-all duration-3000 group">
+                  <Twitter className="w-6 h-6 text-white group-hover:scale-110 transition-transform: scale(2)" />
                 </a>
               </div>
             </div>

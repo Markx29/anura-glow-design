@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-candles.jpg";
+
 
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={heroImage} 
+
           alt="Artisanal handmade soy candles arranged on black marble table"
           className="w-full h-full object-cover"
         />
@@ -28,11 +28,19 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button variant="hero" size="xl" className="min-w-[200px]">
-              Shop Now
-            </Button>
+          
+          <Button
+  variant="hero"
+  size="xl"
+  className="min-w-[200px]"
+  onClick={() => (window.location.href = "/shop")}
+>
+  Shop Now
+</Button>
+
             <Button variant="outline_gold" size="xl" className="min-w-[200px] bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-foreground">
               Create Your Candle
+              scroll down
             </Button>
           </div>
         </div>

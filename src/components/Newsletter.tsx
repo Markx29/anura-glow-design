@@ -15,10 +15,8 @@ const Newsletter = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
             Join the Anura Community
           </h2>
-          <p className="font-body text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Get 10% off your first order plus exclusive access to new scent launches, 
-            seasonal collections, and insider candle care tips.
-          </p>
+         
+
           
           {/* Features */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -63,9 +61,6 @@ const Newsletter = () => {
               <p className="font-body text-muted-foreground mb-4">
                 Discover a new signature scent every month, curated by our master chandlers.
               </p>
-              <div className="font-ui font-semibold text-primary">
-                Starting at $28/month
-              </div>
             </div>
             <Button variant="outline_gold" size="lg">
               Learn More

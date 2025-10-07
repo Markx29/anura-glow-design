@@ -36,13 +36,12 @@ const Footer = () => {
               {[
                 "Shop All Candles",
                 "Custom Design",
-                "Candle Club",
                 "Gift Cards",
                 "About Us",
                 "Our Story"
               ].map((link) => (
                 <li key={link}>
-                  <a href="#" className="font-body text-secondary-foreground/80 hover:text-primary transition-colors duration-300">
+                  <a href="/shop" className="font-body text-secondary-foreground/80 hover:text-primary transition-colors duration-300">
                     {link}
                   </a>
                 </li>

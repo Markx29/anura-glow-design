@@ -3,16 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Star, Heart, ShoppingCart, Minus, Plus, Shield, Truck, RotateCcw } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import flowerCandles from "@/assets/flower-candles-collection.jpg";
-import roseDetail from "@/assets/rose-candles-detail.jpg";
-import bearCandle from "@/assets/bear-candle-pink.jpg";
+
 
 const ProductDetail = () => {
   useScrollAnimation();
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
 
-  const images = [flowerCandles, roseDetail, bearCandle];
+  const images = [ ];
   
   const features = [
     {
@@ -70,9 +68,12 @@ const ProductDetail = () => {
                 <div className="absolute top-4 left-4">
                   <Badge className="bg-primary text-primary-foreground">New</Badge>
                 </div>
-                <button className="absolute top-4 right-4 w-12 h-12 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors">
+                <button
+                 className="absolute top-4 right-4 w-12 h-12 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors"
+                  aria-label="Add to wishlist"
+                  type="button">
                   <Heart className="w-5 h-5 text-primary" />
-                </button>
+                  </button>
               </div>
               
               {/* Thumbnail Images */}
@@ -127,10 +128,14 @@ const ProductDetail = () => {
                 <h3 className="font-ui font-semibold text-foreground mb-4">Available Colors</h3>
                 <div className="flex space-x-3">
                   {['bg-pink-200', 'bg-purple-200', 'bg-amber-100', 'bg-white', 'bg-rose-300', 'bg-slate-300'].map((color, index) => (
-                    <button
-                      key={index}
-                      className={`w-10 h-10 rounded-full border-2 border-border hover:border-primary transition-colors ${color} ${index === 0 ? 'ring-2 ring-primary' : ''}`}
-                    />
+                   <button
+                   key={index}
+                   className={`w-10 h-10 rounded-full border-2 border-border hover:border-primary transition-colors ${color} ${index === 0 ? 'ring-2 ring-primary' : ''}`}
+                   aria-label={`Select ${color} color`}
+                   type="button"
+                 >
+                   <span className="sr-only">Select {color} color</span>
+                 </button>
                   ))}
                 </div>
               </div>
@@ -140,19 +145,11 @@ const ProductDetail = () => {
                 <div className="flex items-center space-x-3">
                   <span className="font-ui font-medium text-foreground">Quantity:</span>
                   <div className="flex items-center border border-border rounded-lg">
-                    <button 
-                      onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                      className="p-2 hover:bg-muted transition-colors"
-                    >
-                      <Minus className="w-4 h-4" />
-                    </button>
+                   
                     <span className="px-4 py-2 font-ui font-medium">{quantity}</span>
-                    <button 
-                      onClick={() => setQuantity(quantity + 1)}
-                      className="p-2 hover:bg-muted transition-colors"
-                    >
+                    
                       <Plus className="w-4 h-4" />
-                    </button>
+                    
                   </div>
                 </div>
               </div>

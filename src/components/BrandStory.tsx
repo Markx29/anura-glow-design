@@ -1,5 +1,5 @@
 import { Leaf, Heart, Flame, Award } from "lucide-react";
-import lifestyleImage from "@/assets/lifestyle-hands.jpg";
+
 
 const values = [
   {
@@ -33,7 +33,6 @@ const BrandStory = () => {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-luxury">
               <img 
-                src={lifestyleImage} 
                 alt="Hands holding a lit handmade soy candle in warm natural lighting"
                 className="w-full h-[600px] object-cover"
               />
